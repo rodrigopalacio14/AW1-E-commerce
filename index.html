@@ -3,71 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tres Katanas - Tu tienda de productos importados</title>
+    <title>Tres Katanas - Inicio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
-    <div class="container-fluid">
-
-        <!-- LOGO IZQUIERDA -->
-        <a class="navbar-brand" href="./index.html">🗡️ Tres Katanas</a>
-
-        <!-- BOTON HAMBURGUESA -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTresKatanas">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menuTresKatanas">
-
-            <!-- MENU CENTRAL -->
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/electronica.html">Electrónica</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/perfumes.html">Perfumes Árabes</a></li>
-                <li class="nav-item"><a class="nav-link" href="./pages/vapers.html">Vapers</a></li>
-            </ul>
-
-            <!-- MENU DERECHO -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-
-                <li class="nav-item me-3">
-                    <a class="nav-link carrito-nav" href="#">
-                        🛒 Carrito
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/login.html">Iniciar Sesión</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/registro.html">Registrarse</a>
-                </li>
-
-            </ul>
-
-        </div>
-    </div>
-</nav>
+    <div id="navbar"></div>
 
     <main class="container-fluid fondo-principal">
-
         <section class="container text-center py-5">
             <h1 class="titulo-principal">Bienvenido a Tres Katanas</h1>
-            <p class="subtitulo-principal">Tu tienda de productos importados: tecnología, perfumes árabes y vapers.</p>
+            <p class="subtitulo-principal">Tu tienda de productos importados: tecnologia, perfumes arabes y vapers.</p>
         </section>
 
-        <section class="container mb-5">
+        <section class="carousel-inicio mb-5">
             <div id="carouselTresKatanas" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-
                     <div class="carousel-item active" data-bs-interval="3000">
-                        <img src="./img/fondos/Perfumesportada.png" class="d-block w-100" alt="Perfumes Árabes">
+                        <img src="./img/fondos/Perfumesportada.png" class="d-block w-100" alt="Perfumes Arabes">
                     </div>
 
                     <div class="carousel-item" data-bs-interval="3000">
@@ -75,9 +30,8 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="3000">
-                        <img src="./img/fondos/tecnologiaportada.png" class="d-block w-100" alt="Tecnología">
+                        <img src="./img/fondos/tecnologiaportada.png" class="d-block w-100" alt="Tecnologia">
                     </div>
-
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselTresKatanas" data-bs-slide="prev">
@@ -92,80 +46,16 @@
 
         <section class="container pb-5">
             <h2 class="text-center titulo-seccion mb-4">Productos Destacados</h2>
-
-            <div class="row justify-content-center g-4">
-
-                <div class="col-md-4">
-                    <div class="card card-producto h-100">
-                        <img src="./img/productos/ignite.jfif" class="card-img-top imagentarjetas" alt="Vaper Ignite">
-                        <div class="card-body">
-                            <h5 class="card-title">Vaper Ignite V50</h5>
-                            <p class="card-text">Vaper importado de diseño moderno.</p>
-                            <a href="./pages/vapers.html" class="btn btn-katana">Ver categoría</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card-producto h-100">
-                        <img src="./img/productos/jbl.jfif" class="card-img-top imagentarjetas" alt="Parlante JBL">
-                        <div class="card-body">
-                            <h5 class="card-title">Parlante JBL</h5>
-                            <p class="card-text">Producto de electrónica importado.</p>
-                            <a href="./pages/electronica.html" class="btn btn-katana">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card-producto h-100">
-                        <img src="./img/productos/Lattafa.jfif" class="card-img-top imagentarjetas" alt="Perfume Lattafa">
-                        <div class="card-body">
-                            <h5 class="card-title">Perfume Lattafa</h5>
-                            <p class="card-text">Fragancia árabe importada.</p>
-                            <a href="./pages/perfumes.html" class="btn btn-katana">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card-producto h-100">
-                        <img src="./img/productos/Yara.PNG" class="card-img-top imagentarjetas" alt="Perfume Yara">
-                        <div class="card-body">
-                            <h5 class="card-title">Perfume Yara</h5>
-                            <p class="card-text">Perfume árabe dulce y elegante.</p>
-                            <a href="./pages/perfumes.html" class="btn btn-katana">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card-producto h-100">
-                        <img src="./img/productos/Elfbar.PNG" class="card-img-top imagentarjetas" alt="Vaper Elfbar">
-                        <div class="card-body">
-                            <h5 class="card-title">Elfbar</h5>
-                            <p class="card-text">Vaper importado compacto.</p>
-                            <a href="./pages/vapers.html" class="btn btn-katana">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card card-producto h-100">
-                        <img src="./img/productos/Notebook.PNG" class="card-img-top imagentarjetas" alt="Notebook">
-                        <div class="card-body">
-                            <h5 class="card-title">Notebook</h5>
-                            <p class="card-text">Equipo tecnológico importado.</p>
-                            <a href="./pages/electronica.html" class="btn btn-katana">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <div class="row justify-content-center g-4" id="productos" data-categoria="destacados"></div>
         </section>
-
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="js/datos.js"></script>
+    <script src="js/titulo.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="componentes/navbar.js"></script>
+    <script src="componentes/cards.js"></script>
+    <script src="js/catalogo.js"></script>
 </body>
 </html>

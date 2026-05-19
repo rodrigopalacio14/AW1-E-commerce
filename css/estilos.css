@@ -33,7 +33,7 @@ body {
 
 /* CONTENEDOR PRINCIPAL */
 .fondo-principal {
-    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url(".../img/fondos/fondolimpio.png");
+    background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url("../img/fondos/fondolimpio.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,14 +61,23 @@ body {
 }
 
 /* CAROUSEL */
+.carousel-inicio {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
 .carousel {
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 0 25px rgba(0,0,0,0.7);
 }
 
+.carousel-inicio .carousel {
+    border-radius: 0;
+}
+
 .carousel-item img {
-    height: 430px;
+    height: clamp(260px, 55vw, 620px);
     object-fit: cover;
 }
 
@@ -109,6 +118,31 @@ body {
 .card-text {
     text-align: center;
     color: #f5f5f5;
+}
+
+.precio-producto {
+    color: #d4af37;
+    font-size: 1.15rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contador-producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.contador-producto .btn {
+    width: 42px;
+}
+
+.cantidad-producto {
+    min-width: 32px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .btn-katana {
